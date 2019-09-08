@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WoW Gem Game</title>
+        <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class = "titleContainer">
+            <h1>WoW Gem Collector!</h1>
+        </div>
+
+        <div class = "instructionsContainer">
+            <p>
+                You will be given a random number at the start of the game.
+            </p>
+            <p>
+                There are four gems below. By clicking on a gems, you will add a specific ammount of points to your total score.
+            </p>
+            <p>
+                You win the game by matching your total score to the random number. You lose the game if your total score goes over the random number.
+            </p>
+            <p>
+                The value of each gem is random and hidden until you click on it. Good luck!
+            </p>
+        </div>
+
+        <div class = "randomNumberContainer">
+            <h1>
+                Random number to reach: <h1 id="randomNumber"></h1>
+            </h1>
+        </div>
+
+        <div class = "winLossContainer">
+            <h1>
+                WINS: <h1 id="wins"></h1>
+            </h1>
+            <h1>
+                LOSSES: <h1 id="losses"></h1>
+            </h1>
+        </div>
+
+        <div class = "fourGemsContainer">
+            <img id="malachite" src="assets/images/malachite.png">
+            <img id="mossagate" src="assets/images/mossagate.png">
+            <img id="shadowgem" src="assets/images/shadowgem.png">
+            <img id="tigerseye" src="assets/images/tigerseye.png">
+        </div>
+
+        <div class = "yourScoreContainer">
+            <h1>
+                YOUR SCORE: <H1 id="yourScore"></H1>
+            </h1>
+        </div>
+        
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
