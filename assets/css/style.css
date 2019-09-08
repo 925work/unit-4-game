@@ -1,0 +1,63 @@
+body {
+    background-color: brown;
+}
+.titleContainer{
+    color: gold;
+    font-size: 24px;
+    background-color: blue;
+    padding: 15px 5px 15px 10px;
+    margin: 5px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid goldenrod;
+}
+.instructionsContainer{
+    color: gold;
+    font-size: 18px;
+    background-color: blue;
+    padding: 15px 5px 15px 10px;
+    margin: 5px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid goldenrod;
+}
+.randomNumberContainer{
+    color: gold;
+    font-size: 18px;
+    background-color: blue;
+    padding: 15px 5px 15px 10px;
+    margin: 5px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid goldenrod;
+}
+.winLossContainer{
+    color: gold;
+    font-size: 18px;
+    background-color: blue;
+    padding: 15px 5px 15px 10px;
+    margin: 5px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid goldenrod;
+}
+.fourGemsContainer{
+    color: gold;
+    font-size: 18px;
+    background-color: blue;
+    padding: 15px 5px 15px 10px;
+    margin: 5px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid goldenrod;
+}
+.yourScoreContainer{
+    color: gold;
+    font-size: 18px;
+    background-color: blue;
+    padding: 15px 5px 15px 10px;
+    margin: 5px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid goldenrod;
+}
