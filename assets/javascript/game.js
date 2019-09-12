@@ -4,36 +4,43 @@ $(document).ready(function() {
 
     var wins = 0;
     var losses = 0;
-    var counter = 0;
-    var gameOver = false;
+    
+    //starts new game once html is loaded
+    newGame();
+    refreshScreen();
 
     //picks new random numbers when game is reset
     function newGame() {
-        var randomNumber = Math.floor(Math.random() * 102) + 19;
+
+        counter = 0;
+
+        $( "#malachite").off("click");
+        $( "#mossagate").off("click");
+        $( "#shadowgem").off("click");
+        $( "#tigerseye").off("click");
+
+        randomNumber = Math.floor(Math.random() * 102) + 19;
         console.log(randomNumber);
         $("#randomNumber").text(randomNumber);
-        var malachite = Math.floor(Math.random() * 12) + 1;
+        malachite = Math.floor(Math.random() * 12) + 1;
         console.log(malachite);
-        var mossagate = Math.floor(Math.random() * 12) + 1;
+        mossagate = Math.floor(Math.random() * 12) + 1;
         console.log(mossagate);
-        var shadowgem = Math.floor(Math.random() * 12) + 1;
+        shadowgem = Math.floor(Math.random() * 12) + 1;
         console.log(shadowgem);
-        var tigerseye = Math.floor(Math.random() * 12) + 1;
+        tigerseye = Math.floor(Math.random() * 12) + 1;
         console.log(tigerseye);
 
         $("#malachite").on("click", function() {
             malachite = parseInt(malachite);
             counter += malachite;
             refreshScreen();
-            alert("New Score: " + counter);
             if(counter === randomNumber){
-                alert("YOU WIN. KEEP GOING!")
                 wins ++;
                 counter = 0;
                 newGame();
                 refreshScreen();
             } else if(counter > randomNumber){
-                alert("YOU LOSE. TRY AGAIN!")
                 losses ++;
                 counter = 0;
                 newGame();
@@ -45,15 +52,12 @@ $(document).ready(function() {
             mossagate = parseInt(mossagate);
             counter += mossagate;
             refreshScreen();
-            alert("New Score: " + counter);
             if(counter === randomNumber){
-                alert("YOU WIN. KEEP GOING!")
                 wins ++;
                 counter = 0;
                 newGame();
                 refreshScreen();
             } else if(counter > randomNumber){
-                alert("YOU LOSE. TRY AGAIN!")
                 losses ++;
                 counter = 0;
                 newGame();
@@ -65,15 +69,12 @@ $(document).ready(function() {
             shadowgem = parseInt(shadowgem);
             counter += shadowgem;
             refreshScreen();
-            alert("New Score: " + counter);
             if(counter === randomNumber){
-                alert("YOU WIN. KEEP GOING!")
                 wins ++;
                 counter = 0;
                 newGame();
                 refreshScreen();
             } else if(counter > randomNumber){
-                alert("YOU LOSE. TRY AGAIN!")
                 losses ++;
                 counter = 0;
                 newGame();
@@ -85,15 +86,12 @@ $(document).ready(function() {
             tigerseye = parseInt(tigerseye);
             counter += tigerseye;
             refreshScreen();
-            alert("New Score: " + counter);
             if(counter === randomNumber){
-                alert("YOU WIN. KEEP GOING!")
                 wins ++;
                 counter = 0;
                 newGame();
                 refreshScreen();
             } else if(counter > randomNumber){
-                alert("YOU LOSE. TRY AGAIN!")
                 losses ++;
                 counter = 0;
                 newGame();
@@ -101,9 +99,6 @@ $(document).ready(function() {
             } 
         })
     }
-    //starts new game once html is loaded
-    newGame();
-    refreshScreen();
 
     //refreshes screen
     function refreshScreen() {
