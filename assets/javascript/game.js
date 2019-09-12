@@ -36,11 +36,13 @@ $(document).ready(function() {
             counter += malachite;
             refreshScreen();
             if(counter === randomNumber){
+                $("#winLossNotification").text("YOU WIN! KEEP GOING!!!")
                 wins ++;
                 counter = 0;
                 newGame();
                 refreshScreen();
             } else if(counter > randomNumber){
+                $("#winLossNotification").text("You lost, but keep trying..")
                 losses ++;
                 counter = 0;
                 newGame();
@@ -53,11 +55,13 @@ $(document).ready(function() {
             counter += mossagate;
             refreshScreen();
             if(counter === randomNumber){
+                $("#winLossNotification").text("YOU WIN! KEEP GOING!!!")
                 wins ++;
                 counter = 0;
                 newGame();
                 refreshScreen();
             } else if(counter > randomNumber){
+                $("#winLossNotification").text("You lost, but keep trying..")
                 losses ++;
                 counter = 0;
                 newGame();
@@ -70,11 +74,13 @@ $(document).ready(function() {
             counter += shadowgem;
             refreshScreen();
             if(counter === randomNumber){
+                $("#winLossNotification").text("YOU WIN! KEEP GOING!!!")
                 wins ++;
                 counter = 0;
                 newGame();
                 refreshScreen();
             } else if(counter > randomNumber){
+                $("#winLossNotification").text("You lost, but keep trying..")
                 losses ++;
                 counter = 0;
                 newGame();
@@ -87,11 +93,13 @@ $(document).ready(function() {
             counter += tigerseye;
             refreshScreen();
             if(counter === randomNumber){
+                $("#winLossNotification").text("YOU WIN! KEEP GOING!!!")
                 wins ++;
                 counter = 0;
                 newGame();
                 refreshScreen();
             } else if(counter > randomNumber){
+                $("#winLossNotification").text("You lost, but keep trying..")
                 losses ++;
                 counter = 0;
                 newGame();
